@@ -1,0 +1,12 @@
+{
+  "minimumVersion" : 1,
+  "packages" : [
+    {
+      "title" : null,
+      "name" : "MX Pack",
+      "version" : "0.0.1",
+      "location" : "mx-pack.json",
+      "priority" : 0
+    }
+  ]
+}
