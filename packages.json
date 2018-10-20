@@ -3,7 +3,7 @@
   "packages" : [
     {
       "title" : null,
-      "name" : "MX Pack",
+      "name" : "MX-Pack",
       "version" : "0.0.1",
       "location" : "mx-pack.json",
       "priority" : 0
