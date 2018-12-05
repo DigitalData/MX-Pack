@@ -3,9 +3,9 @@
   "packages" : [
     {
       "title" : null,
-      "name" : "Main",
-      "version" : "0.0.1",
-      "location" : "main.json",
+      "name" : "MX-Pack-Latest",
+      "version" : "0.0.2",
+      "location" : "mx-pack.json",
       "priority" : 0
     }
   ]
