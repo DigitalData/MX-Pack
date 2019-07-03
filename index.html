@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,52 +11,195 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto" rel="stylesheet">
 
     <style>
-            body{
-                /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#36567c+0,bc0074+100 */
-                background: #36567c; /* Old browsers */
-                background: -moz-linear-gradient(top, #36567c 0%, #bc0074 100%); /* FF3.6-15 */
-                background: -webkit-linear-gradient(top, #36567c 0%,#bc0074 100%); /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(to bottom, #36567c 0%,#bc0074 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36567c', endColorstr='#bc0074',GradientType=0 ); /* IE6-9 */
-                color: white;
-                font-family: 'Roboto', sans-serif;
-                height: 100vh;
-            }
-        
-            h1{
-                font-family: 'Bungee', cursive;
-                margin: -20px 0px;
-                text-align: center;
-            }
-        
-            h2{
-                font-family: 'Bungee', cursive;
-                margin: -20px 0px;
-                padding-left: 20px;
-            }
-        
-            p{
-                margin: 5px 0px;
-                padding-left: 40px;
-            }
-        
-            li{
-                padding: 5px 0px;
-            }
-        
-            li:first-child{
-                padding-top: 0px;
-            }
-        
-            li:last-child{
-                padding-bottom: 0px;
-            }
-            
-            </style>
+        body {
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#36567c+0,bc0074+100 */
+            background: #36567c;
+            /* Old browsers */
+            background: -moz-linear-gradient(top, #36567c 0%, #bc0074 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #36567c 0%, #bc0074 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #36567c 0%, #bc0074 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#36567c', endColorstr='#bc0074', GradientType=0);
+            /* IE6-9 */
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: 'Bungee', cursive;
+            margin: -20px 0px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Bungee', cursive;
+            margin: -20px 0px;
+            padding-left: 20px;
+            margin-left: 20px;
+        }
+
+        p {
+            margin: 5px 0px;
+            padding-left: 40px;
+        }
+
+        #nav {
+            text-align: center;
+        }
+
+        #download {
+            text-align: center;
+            margin: -15px;
+            display: inline;
+        }
+
+        #download a {
+            text-decoration: none;
+            color: white;
+            background-color: #bc0074;
+            padding: 0px 20px;
+            border-radius: 10px;
+            margin: 0px 20px;
+        }
+
+        #download a:hover {
+            background-color: #222222;
+            border-radius: 50px;
+            transition: 0.5s;
+        }
+
+        #modlist {
+            columns: 3;
+            -webkit-columns: 3;
+            -moz-columns: 3;
+            list-style: none;
+            margin-left: -40px;
+        }
+
+        #modlist li {
+            background-color: #222222;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        #modlist li:first-child {
+            margin-top: 0;
+        }
+
+        li {
+            padding: 5px 0px;
+        }
+
+        li:first-child {
+            padding-top: 0px;
+        }
+
+        li:last-child {
+            padding-bottom: 0px;
+        }
+    </style>
+
+    <script>
+        var mods = ["AE2 Stuff",
+            "Artifice",
+            "Backpack",
+            "Boilerplate",
+            "Brandon's Core",
+            "Brewcraft",
+            "BuildCraft Compat",
+            "ChickenChunks",
+            "Chisel",
+            "CodeChickenCore",
+            "CoFH Core",
+            "CTMLib",
+            "Damage Indicators",
+            "Dimensional Anchors",
+            "EnderCore",
+            "Ex Nihilo",
+            "Extra Cells 2",
+            "Flaxbeard's Steam Power",
+            "Fossils and Archeology Revival",
+            "iChunUtil",
+            "IndustricalCraft 2",
+            "Inventory Tweaks",
+            "Iron Chest",
+            "Iron Tank",
+            "Jabba",
+            "LLibrary",
+            "Magical Crops",
+            "McJtyLib",
+            "Mekanism",
+            "Mekanism Generators",
+            "Mekanism Tools",
+            "Metallurgy 4",
+            "Metallurgy Core",
+            "MineChem",
+            "MineFactory Reloaded",
+            "MineTweaker 3",
+            "Mouse Tweaks",
+            "Natura",
+            "Nether Ores",
+            "NotEnoughItems",
+            "Nuclear Control 2",
+            "OpenBlocks",
+            "OpenMods",
+            "Pam's HavestCraft",
+            "PneumaticCraft",
+            "Portal Gun",
+            "ProjectE",
+            "Red Gear Core",
+            "RFTools",
+            "Ruins Spawning System",
+            "Sync",
+            "Technomancy",
+            "Thaumic Equivalence",
+            "Thaumic Exploration",
+            "Thaumic Tinkerer",
+            "The BigTrees Mod",
+            "Thermal Dynamics",
+            "Thermal Expansion",
+            "Thermal Foundation",
+            "Universal Electricity",
+            "UniDict",
+            "WanionLib",
+            "WIT"
+        ];
+    </script>
 </head>
+
 <body>
     <h1>⌨️ The DigitalData Launcher 🖱️</h1>
     <hr>
-    <p>What's up, everyone. Welcome to the MX-Pack's homepage. If I get up to it someday, I'll add the modlist for the pack and will hopefully eventually work on adding a Sphax resource pack.</p>
+    <p>What's up, everyone. Welcome to the MX-Pack's homepage. If I get up to it someday, I'll add the modlist for the
+        pack and will hopefully eventually work on adding a Sphax resource pack.</p>
+
+    <hr>
+    <!-- <br> -->
+    <div id="nav">
+        <h2 id="download"><a href="https://github.com/DigitalData/MX-Pack/releases/latest" target="_blank">💾 Download 📥</a></h2>
+        <h2 id="download"><a href="./news.html">📯 News 📰</a></h2>
+    </div>
+
+    <hr>
+    <br>
+    <h2>📜 Modlist 🔮</h2>
+    <br>
+    <p>I'm lazy, but I did it because this is a fun pack. The versions are hard to keep track of and this is a work in progress. For now, the names will have to do.</p>
+    <ul id="modlist">
+
+    </ul>
+
+    <script>
+        var modlist = document.getElementById('modlist');
+        mods.forEach(function (a) {
+            var newli = document.createElement('li');
+            newli.innerText = a;
+            modlist.appendChild(newli);
+        });
+    </script>
 </body>
+
 </html>
