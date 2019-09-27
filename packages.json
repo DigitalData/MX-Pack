@@ -7,6 +7,13 @@
       "version" : "0.0.2",
       "location" : "mx-pack.json",
       "priority" : 0
-    }
+    },
+	{
+	  "title" : null,
+      "name" : "X-Pack-Latest",
+      "version" : "1.0",
+      "location" : "x-pack-1.12.json",
+      "priority" : 0
+	}
   ]
 }
