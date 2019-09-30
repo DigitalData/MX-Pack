@@ -2,6 +2,7 @@ Actually Additions
 Actually Baubles
 AE2 Stuff
 AE2 Wireless Terminal Library
+AI Improvements
 Akashic Tome
 Alchemistry
 alib
@@ -16,6 +17,7 @@ Baubles
 bdlib
 Better Builder's Wands
 BetterFPS
+Bibliocraft
 Binnie's Mods
 Botania
 BspkrsCore
@@ -60,6 +62,7 @@ Inventory Spam
 Inventory Tweaks
 Iron Backpacks
 Iron Chests
+JAOPCA
 JEI
 JEI Integration
 Just Another Rotten Flesh to Leather Mod
@@ -85,6 +88,7 @@ MrTJPCore
 Mystical Agradditions
 Mystical Agriculture
 Natura
+Neat
 Netherending Ores
 No Recipe Book
 NoMoreRecipeConflict
@@ -119,6 +123,7 @@ RFTools
 RFTools Control
 RFTools Dimensions
 RFTools Power
+Ruins
 Simply Jetpacks 2
 Storage Drawers
 Surge

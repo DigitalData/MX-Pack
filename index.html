@@ -90,7 +90,7 @@
         }
 
         #modlistlink {
-            color:#bc0074;
+            color: #bc0074;
             text-decoration: none;
             font-weight: bold;
             text-align: center;
@@ -111,29 +111,29 @@
 
     <script>
         var xMods = ["Actually Additions", "Actually Baubles", "AE2 Stuff", "AE2 Wireless Terminal Library",
-            "Akashic Tome", "Alchemistry", "alib", "AppleSkin", "Applied Energistics 2", "Armory Expansion",
-            "aroma1997core", "Aroma1997s Dimensional World", "Attachable Grinder", "autoreglib", "Baubles", "bdlib",
-            "Better Builder's Wands", "BetterFPS", "Binnie's Mods", "Botania", "BspkrsCore", "Buildcraft",
-            "Chameleon", "Chisel", "CodeChickenLib", "CoFH Core", "CoFH World", "Connected Textures Mod",
-            "Construct's Armory", "Controlling", "CosmeticArmorReworked", "Cucumber", "Ding",
-            "Dynamic Surroundings", "Electroblob's Wizardry", "EnderCore", "EnderIO", "Ex Nihilo Creatio",
+            "AI Improvements", "Akashic Tome", "Alchemistry", "alib", "AppleSkin", "Applied Energistics 2",
+            "Armory Expansion", "aroma1997core", "Aroma1997s Dimensional World", "Attachable Grinder", "autoreglib",
+            "Baubles", "bdlib", "Better Builder's Wands", "BetterFPS", "Bibliocraft", "Binnie's Mods", "Botania",
+            "BspkrsCore", "Buildcraft", "Chameleon", "Chisel", "CodeChickenLib", "CoFH Core", "CoFH World",
+            "Connected Textures Mod", "Construct's Armory", "Controlling", "CosmeticArmorReworked", "Cucumber",
+            "Ding", "Dynamic Surroundings", "Electroblob's Wizardry", "EnderCore", "EnderIO", "Ex Nihilo Creatio",
             "Extra Utilities", "ExtraCells2", "Extreme Reactors", "FoamFix", "Forestry", "Forgelin",
             "ForgeMultipart", "FTBLib", "Galacticraft Core", "Galacticraft Planets", "Gravity Gun", "HWYLA",
             "iChunUtil", "Immersive Engineering", "Immersive Petroleum", "Immersive Tech", "Industrial Craft 2",
             "Industrial Foregoing", "Industrial Wires", "Integration Foregoing", "Inventory Spam",
-            "Inventory Tweaks", "Iron Backpacks", "Iron Chests", "JEI", "JEI Integration",
+            "Inventory Tweaks", "Iron Backpacks", "Iron Chests", "JAOPCA", "JEI", "JEI Integration",
             "Just Another Rotten Flesh to Leather Mod", "Just Enough Dimensions", "Just Enough Energistics",
             "Just Enough HarvestCraft", "Just Enough Petroleum", "Just Enough Reactors", "Just Enough Resources",
             "KleeSlabs", "Lost Cities", "MalisisCore", "MalisisDoors", "mantle", "McJtyLib", "Mekanism",
             "Metallurgy 4: Reforged", "Micdoodle Core", "More Overlays", "Morpheus", "Mouse Tweaks", "MrTJPCore",
-            "Mystical Agradditions", "Mystical Agriculture", "Natura", "Netherending Ores", "No Recipe Book",
-            "NoMoreRecipeConflict", "NotEnoughIDs", "OpenBlocks", "OpenModsLib", "Optifine", "orelib",
-            "p455wordslib", "Pam's Cookables", "Pam's Harvestcraft", "Phosphor", "PlusTiC", "Portal Gun",
+            "Mystical Agradditions", "Mystical Agriculture", "Natura", "Neat", "Netherending Ores",
+            "No Recipe Book", "NoMoreRecipeConflict", "NotEnoughIDs", "OpenBlocks", "OpenModsLib", "Optifine",
+            "orelib", "p455wordslib", "Pam's Cookables", "Pam's Harvestcraft", "Phosphor", "PlusTiC", "Portal Gun",
             "Project Red - Base", "Project Red - Compat", "Project Red - Fabrication", "Project Red - Integration",
             "Project Red - Lighting", "Project Red - Mechanical", "Project Red - World", "ProjectE",
             "ProjectE Integration", "Quark", "Quick Leaf Decay", "Random Things", "Redstone Flux",
             "Refined Storage", "Refined Storage Addons", "Reliquary", "RFTools", "RFTools Control",
-            "RFTools Dimensions", "RFTools Power", "Simply Jetpacks 2", "Storage Drawers", "Surge",
+            "RFTools Dimensions", "RFTools Power", "Ruins", "Simply Jetpacks 2", "Storage Drawers", "Surge",
             "Tesla Core Lib", "Thaumcraft", "Thaumic Energistics", "Thaumic Inventory Scanning", "Thaumic JEI",
             "Thaumic Tinkerer", "Thermal Cultivation", "Thermal Dynamics", "Thermal Expansion",
             "Thermal Foundation", "Thermal Innovation", "Tinkers Construct", "Tinkers' Tool Leveling",
@@ -141,6 +141,7 @@
             "UniDict", "Unloader", "VanillaFix", "WanionLib", "Wireless Crafting Terminal", "WrapUp",
             "Xaero's Minimap", "Xaero's World Map", "YABBA", "ZeroCore"
         ];
+
         var mxMods = ["AE2 Stuff",
             "Artifice",
             "Backpack",
@@ -228,59 +229,62 @@
     <br>
     <p>I'm lazy, but I did it because this is a fun pack. The versions are hard to keep track of and this is a work in
         progress. For now, the names will have to do.</p>
-    
-        <div id="nav">
-                <h2 id="download"><a class="mxButton" onclick="mxPack();">MX Pack (1.7.10)</a></h2>
-                <h2 id="download"><a class="xButton" onclick="xPack();">X Pack (1.12.2)</a></h2>
-        </div>
+
+    <div id="nav">
+        <h2 id="download"><a class="mxButton" onclick="mxPack();">MX Pack (1.7.10)</a></h2>
+        <h2 id="download"><a class="xButton" onclick="xPack();">X Pack (1.12.2)</a></h2>
+    </div>
 
     <ul id="modlist">
 
     </ul>
 
     <script>
-
-var xButton = document.getElementsByClassName('xButton');
-var mxButton = document.getElementsByClassName('mxButton');
-var modlist = document.getElementById('modlist');
+        var xButton = document.getElementsByClassName('xButton');
+        var mxButton = document.getElementsByClassName('mxButton');
+        var modlist = document.getElementById('modlist');
 
         xPack();
 
-        function mxPack(){
-        modlist.innerHTML = '';
-        mxMods.forEach(function (a) {
-            var newli = document.createElement('li');
-            newli.innerText = a;
-            modlist.appendChild(newli);
-        });
+        function mxPack() {
+            modlist.innerHTML = '';
+            mxMods.forEach(function (a) {
+                var newli = document.createElement('li');
+                newli.innerText = a;
+                modlist.appendChild(newli);
+            });
 
-        xButton.item(0).style.backgroundColor = "#bc0074";
-        mxButton.item(0).style.backgroundColor = "#222222";
+            xButton.item(0).style.backgroundColor = "#bc0074";
+            mxButton.item(0).style.backgroundColor = "#222222";
         }
 
-        function xPack(){
-        modlist.innerHTML = '';
+        function xPack() {
+            modlist.innerHTML = '';
 
-        var modListLink = document.createElement('li');
-        var modListLinkA = document.createElement('a');
-        modListLinkA.id = "modlistlink";
-        modListLinkA.target = "_blank";
-        modListLinkA.href = "https://docs.google.com/spreadsheets/d/1QyIW2o-6XNdN6YEVDdeJNwDQZyaM23BeveDgEFc0bvU/edit?usp=sharing";
-        modListLinkA.innerText = "Modlist (with Links!)"
-        modListLink.appendChild(modListLinkA);
-        modlist.appendChild(modListLink);
+            var modListLink = document.createElement('li');
+            var modListLinkA = document.createElement('a');
+            modListLinkA.id = "modlistlink";
+            modListLinkA.target = "_blank";
+            modListLinkA.href =
+                "https://docs.google.com/spreadsheets/d/1QyIW2o-6XNdN6YEVDdeJNwDQZyaM23BeveDgEFc0bvU/edit?usp=sharing";
+            modListLinkA.innerText = "Modlist (with Links!)"
+            modListLink.appendChild(modListLinkA);
+            modlist.appendChild(modListLink);
 
-        xMods.forEach(function (a) {
-            var newli = document.createElement('li');
-            newli.innerText = a;
-            modlist.appendChild(newli);
-        });
-        
+            xMods.forEach(function (a) {
+                var newli = document.createElement('li');
+                newli.innerText = a;
+                modlist.appendChild(newli);
+            });
 
-        mxButton.item(0).style.backgroundColor = "#bc0074";
-        xButton.item(0).style.backgroundColor = "#222222";
+            if(xMods.length % 3 == 0) {
+                modlist.appendChild(document.createElement('li'));
+            }
+
+
+            mxButton.item(0).style.backgroundColor = "#bc0074";
+            xButton.item(0).style.backgroundColor = "#222222";
         }
-
     </script>
 </body>
 
