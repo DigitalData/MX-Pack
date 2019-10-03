@@ -11,7 +11,7 @@
 	{
 	  "title" : null,
       "name" : "X Pack 1.12.2",
-      "version" : "1.1",
+      "version" : "1.2",
       "location" : "x-pack-1.12.json",
       "priority" : 0
 	}
