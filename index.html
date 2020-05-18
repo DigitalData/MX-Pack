@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>The DigitalData Launcher</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto" rel="stylesheet">
 
     <style>
@@ -63,6 +61,7 @@
             padding: 0px 20px;
             border-radius: 10px;
             margin: 0px 20px;
+			transition: 0.5s;
         }
 
         #download a:hover {
@@ -97,6 +96,12 @@
             text-decoration: none;
             font-weight: bold;
             text-align: center;
+        }
+		
+		#modlistlink:hover {
+            // color: white;
+			text-decoration: underline;
+			transition: 0.5s;
         }
 
         li {
@@ -187,12 +192,12 @@
     <br>
     <p>I'm lazy, but I did it because this is a fun pack. The versions are hard to keep track of and this is a work in
         progress. For now, the names will have to do.</p>
-
+	<br>
     <div id="nav">
 		<h2 id="download"><a class="xButton" onclick="xPack();">X Pack (1.12.2)</a></h2>
         <h2 id="download"><a class="mxButton" onclick="mxPack();">MX Pack (1.7.10)</a></h2>
     </div>
-
+	<br>
     <ul id="modlist">
 
     </ul>
@@ -213,7 +218,9 @@
             });
 
             xButton.item(0).style.backgroundColor = "#bc0074";
-            mxButton.item(0).style.backgroundColor = "#222222";
+			xButton.item(0).style.border = "5px solid #bc0074"
+            mxButton.item(0).style.backgroundColor = "#bc0074"; // "#222222";
+			mxButton.item(0).style.border = "5px solid white"
         }
 
         function xPack() {
@@ -241,7 +248,9 @@
 
 
             mxButton.item(0).style.backgroundColor = "#bc0074";
-            xButton.item(0).style.backgroundColor = "#222222";
+			mxButton.item(0).style.border = "5px solid #bc0074"
+            xButton.item(0).style.backgroundColor = "#bc0074"; // "#222222";
+			xButton.item(0).style.border = "5px solid white"
         }
     </script>
 </body>
